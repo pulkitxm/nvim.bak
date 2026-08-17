@@ -1,5 +1,9 @@
 return {
   {
+    "iamcco/markdown-preview.nvim",
+    enabled = false,
+  },
+  {
     "MeanderingProgrammer/render-markdown.nvim",
     opts = {
       enabled = false,
