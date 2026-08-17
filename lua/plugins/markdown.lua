@@ -8,6 +8,7 @@ return {
     opts = {
       enabled = false,
       render_modes = { "n", "c", "t", "v", "V", "\22" },
+      anti_conceal = { enabled = false },
     },
   },
   {
