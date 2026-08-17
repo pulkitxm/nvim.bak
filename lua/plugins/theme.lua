@@ -3,6 +3,8 @@ local function mute_icons()
   for _, shade in ipairs(shades) do
     vim.api.nvim_set_hl(0, "MiniIcons" .. shade, { fg = "#7d8590" })
   end
+  vim.api.nvim_set_hl(0, "SnacksIndent", { fg = "#21262d" })
+  vim.api.nvim_set_hl(0, "SnacksIndentScope", { fg = "#30363d" })
 end
 
 return {
