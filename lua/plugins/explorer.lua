@@ -6,6 +6,22 @@ end
 
 return {
   "folke/snacks.nvim",
+  keys = {
+    {
+      "<leader>e",
+      function()
+        local explorer = Snacks.picker.get({ source = "explorer" })[1]
+        if not explorer then
+          Snacks.explorer()
+        elseif vim.bo.filetype:find("snacks_") then
+          explorer:close()
+        else
+          explorer:focus()
+        end
+      end,
+      desc = "Explorer (open/focus/close)",
+    },
+  },
   opts = {
     picker = {
       sources = {
