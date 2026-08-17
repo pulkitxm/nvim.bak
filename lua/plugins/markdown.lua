@@ -7,6 +7,7 @@ return {
     "MeanderingProgrammer/render-markdown.nvim",
     opts = {
       enabled = false,
+      render_modes = { "n", "c", "t", "v", "V", "\22" },
     },
   },
   {
