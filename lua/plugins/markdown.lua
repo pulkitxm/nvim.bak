@@ -1,5 +1,9 @@
 return {
   {
+    "MeanderingProgrammer/render-markdown.nvim",
+    enabled = false,
+  },
+  {
     "mfussenegger/nvim-lint",
     optional = true,
     opts = function(_, opts)
